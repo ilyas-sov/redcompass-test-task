@@ -32,28 +32,31 @@ function Users() {
   }, [dispatch]);
 
   return (
-    <ul className={classes.users_container}>
-      {isLoading && <Loader />}
-      {users.length > 0 &&
-        users.map((user) => (
-          <li key={user.id}>
-            <Card className={classes.user_card}>
-              <div>
-                <h2>{user.name}</h2>
-                <p>{user.id}</p>
-              </div>
-              <Link to={`/users/${user.id}`} state={user}>
-                Open details
-              </Link>
-            </Card>
-          </li>
-        ))}
+    <div className={classes.users_container}>
+      <h2>Users</h2>
+      <ul className={classes.users}>
+        {isLoading && <Loader />}
+        {users.length > 0 &&
+          users.map((user) => (
+            <li key={user.id}>
+              <Card className={classes.user_card}>
+                <div>
+                  <h2>{user.name}</h2>
+                  <p>{user.id}</p>
+                </div>
+                <Link to={`/users/${user.id}`} state={user}>
+                  Open details
+                </Link>
+              </Card>
+            </li>
+          ))}
 
-      {!isLoading && !error && users.length === 0 && (
-        <p className={classes.plug}>Users not found.</p>
-      )}
-      {error && <Error>{error}</Error>}
-    </ul>
+        {!isLoading && !error && users.length === 0 && (
+          <p className={classes.plug}>Users not found.</p>
+        )}
+        {error && <Error>{error}</Error>}
+      </ul>
+    </div>
   );
 }
 
