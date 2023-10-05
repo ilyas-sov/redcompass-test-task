@@ -1,4 +1,4 @@
-This server was used for that task https://github.com/ilyas-sov/redcompass-backend
+This backend server was used for this task — https://github.com/ilyas-sov/redcompass-backend
 
 1. Install and run server
    ```
