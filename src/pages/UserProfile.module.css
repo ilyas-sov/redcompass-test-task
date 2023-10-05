@@ -1,0 +1,10 @@
+.user_profile_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user_profile_container .plug {
+  font-size: 1rem;
+  color: #212121;
+}

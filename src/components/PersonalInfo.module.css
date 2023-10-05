@@ -1,0 +1,22 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.info_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info_container .balance {
+  font-size: 2rem;
+}
+
+.info_container .balance span {
+  font-size: 1.2rem;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

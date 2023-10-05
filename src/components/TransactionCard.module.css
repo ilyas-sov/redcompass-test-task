@@ -1,0 +1,28 @@
+.transaction_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid gray;
+}
+
+.transaction_card .info p:first-child {
+  font-weight: 700;
+}
+
+.transaction_card .amount {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.transaction_card .amount.income {
+  color: #35b02c;
+}
+
+.transaction_card .amount.outcome {
+  color: red;
+}
+
+.transaction_card .amount.self {
+  color: #212121;
+}

@@ -1,0 +1,54 @@
+.users_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.users_container h2 {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.users_container a {
+  color: gray;
+}
+
+.users_container p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.user_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.user_card h2 {
+  font-weight: 700;
+  color: #212121;
+}
+
+.user_card:hover {
+  background-color: #fff;
+}
+
+.user_card:hover h2,
+.user_card:hover p,
+.user_card:hover a {
+  color: #212121;
+}
+
+.users_container a:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.users_container .plug {
+  font-size: 1rem;
+  color: #212121;
+}
